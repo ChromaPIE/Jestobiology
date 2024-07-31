@@ -80,13 +80,12 @@ function SMODS.INIT.Jestobiology()
         -- Create Joker
         local big_loser = {
             loc = {
-                name = "Big Loser",
+                name = "混吃等死",
                 text = {
-                    "Gain {C:attention}$4{} and {X:mult,C:white}X3{} Mult if",
-                    "{C:attention}poker hand{} is a {C:attention}#1#{},",
-                    "poker hand changes on",
-                    "every matching hand",
-                    "{s:0.7}(Impractical Joker + To-Do List){}"
+                    "若打出的{C:attention}牌型{}为{C:attention}#1#",
+                    "获得{C:attention}$4{}并{X:mult,C:white}X3{}倍率",
+                    "触发时改变需求牌型",
+                    "{s:0.8,C:inactive}（即兴整蛊小丑 + 待办清单）"
                 }
             },
             ability_name = "Big Loser",
@@ -139,13 +138,11 @@ function SMODS.INIT.Jestobiology()
         -- Create Joker
         local tightrope = {
             loc = {
-                name = "Tight Rope",
+                name = "魂断钢索",
                 text = {
-                    "{X:red,C:white} X#1# {} Mult on {C:attention}final hand{}",
-                    "of round. This Joker gains",
-                    "{X:red,C:white} X0.75{} Mult when {C:attention}final{}",
-                    "{C:attention}hand{} is played",
-                    "{s:0.7}(Acrobat + Chalk Outline){}"
+                    "每回合{C:attention}最后一次{}出牌{X:red,C:white} X#1# {}倍率",
+                    "并使该倍率加成提升{X:red,C:white}X0.75",
+                    "{s:0.8,C:inactive}（杂技演员 + 凶案现场）"
                 }
             },
             ability_name = "Tight Rope",
@@ -304,14 +301,14 @@ function SMODS.INIT.Jestobiology()
         -- Create Joker
         local monday_menace = {
             loc = {
-                name = "Monday Menace",
+                name = "周一心慌慌",
                 text = {
-                    "{C:dark_edition}+1{} Joker Slot",
-                    "Create a random {C:planet}Planet{} or {C:tarot}Tarot{}",
-                    "card per 2 {C:attention}rerolls{} in the shop",
-                    "{C:inactive,s:0.7}({C:green,s:0.7}#1#{}{C:inactive,s:0.7} rerolls left){}",
-                    "{C:inactive,s:0.7}(Must have room){}",
-                    "{s:0.7}(Sunday Funnies + Philosophical Joker){}",
+                    "{C:dark_edition}+1{}小丑牌槽位",
+                    "在商店中每{C:attention}重掷{}两次",
+                    "随机生成一张{C:planet}星球牌{}或{C:tarot}塔罗牌",
+                    "{C:inactive}(必须有空间)",
+                    "{C:inactive}（还需重掷{C:green}#1#{C:inactive}次）",
+                    "{s:0.8,C:inactive}（周日乐淘淘 + 哲思小丑）"
                 }
             },
             ability_name = "Monday Menace",
@@ -446,13 +443,13 @@ function SMODS.INIT.Jestobiology()
         -- Create Joker
         local party_animal = {
             loc = {
-                name = "Party Animal",
+                name = "人来疯",
                 text = {
-                    "This Joker gains {C:chips}+16{} Chips",
-                    "when played hand is a",
-                    "{C:attention}High Card{} or {C:attention}Pair{}",
-                    "{C:inactive,s:0.7}(Currently {}{C:chips,s:0.7}+#1#{}{C:inactive,s:0.7} Chips){}",
-                    "{s:0.7}(Pitiful Joker + Shepherd Joker)"
+                    "打出的牌包含",
+                    "{C:attention}高牌{}或{C:attention}对子{}时",
+                    "本牌获得{C:chips}+16{}筹码",
+                    "{C:inactive}（当前为{C:chips}+#1#{C:inactive}筹码）",
+                    "{s:0.8,C:inactive}（凄惨小丑 + 牧羊犬小丑）"
                 }
             },
             ability_name = "Party Animal",
@@ -498,11 +495,11 @@ function SMODS.INIT.Jestobiology()
         -- Create Joker
         local fishclown = {
             loc = {
-                name = "Fishclown",
+                name = "丑人鱼",
                 text = {
-                    "{C:attention}Enhanced Cards{} gives",
-                    "{X:mult,C:white}X1.5{} Mult when scored",
-                    "{s:0.7}(Expanded Art Joker + Clownfish){}"
+                    "打出的{C:attention}增强卡牌",
+                    "在计分时给予{X:mult,C:white}X1.5{}倍率",
+                    "{s:0.8}（小丑半身像 + 小丑鱼）"
                 }
             },
             ability_name = "Fishclown",
@@ -543,13 +540,12 @@ function SMODS.INIT.Jestobiology()
         -- Create Joker
         local electric_chair = {
             loc = {
-                name = "Electric Chair",
+                name = "电椅",
                 text = {
-                    "{C:green}#1# in #2#{} chance to get an",
-                    "{C:alchemical}Alchemical{} card when you discard",
-                    "an {C:attention}Enhanced{} or {C:attention}face{} card",
-                    "{C:inactive}(Must have room){}",
-                    "{s:0.7}(Faceless Joker + Shock Humor){}"
+                    "弃掉{C:attention}增强牌{}或{C:attention}人头牌{}时",
+                    "有{C:green}#1#/#2#{}的几率获得一张{C:alchemical}炼金牌",
+                    "{C:inactive}（必须有空位）",
+                    "{s:0.8,C:inactive}（无面小丑 + 逆天恶趣味）"
                 }
             },
             ability_name = "Electric Chair",
@@ -591,13 +587,13 @@ function SMODS.INIT.Jestobiology()
         -- Create Joker
         local original_character = {
             loc = {
-                name = "Original Character",
+                name = "原创角色",
                 text = {
-                    "{C:dark_edition}+1{} Joker Slot",
-                    "{C:mult}+12{} Mult for each",
-                    "empty {C:attention}Joker{} slot",
-                    "{C:inactive}(Currently {C:mult}+#1#{C:inactive} Mult)",
-                    "{s:0.7}(Joker Stencil + Autism Creature){}"
+                    "小丑牌槽位{C:dark_edition}+1",
+                    "每有一个空的{C:attention}小丑牌{}槽位",
+                    "{C:mult}+12{}倍率",
+                    "{C:inactive}（当前为{C:mult}+#1#{C:inactive}倍率）",
+                    "{s:0.8,C:inactive}（小丑模具 + 孤独症画作）"
                 }
             },
             ability_name = "Original Character",
@@ -653,7 +649,7 @@ function SMODS.INIT.Jestobiology()
         FusionJokers.fusions:add_fusion("j_shepherd", "chips", false, "j_pitiful", nil, false, "j_f_party_animal", 8)
     end
     if is_mystJokers then
-        FusionJokers.fusions:add_fusion("j_stencil", nil, false, "j_autism_creature", nil, false, "j_f_original_character", 18)
+        FusionJokers.fusions:add_fusion("j_stencil", nil, false, "j_myst_autism_creature", nil, false, "j_f_original_character", 18)
     end
 end
 
