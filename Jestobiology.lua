@@ -306,7 +306,7 @@ function SMODS.INIT.Jestobiology()
                     "{C:dark_edition}+1{}小丑牌槽位",
                     "在商店中每{C:attention}重掷{}两次",
                     "随机生成一张{C:planet}星球牌{}或{C:tarot}塔罗牌",
-                    "{C:inactive}(必须有空间)",
+                    "{C:inactive}(必须有空位)",
                     "{C:inactive}（还需重掷{C:green}#1#{C:inactive}次）",
                     "{s:0.8,C:inactive}（周日乐淘淘 + 哲思小丑）"
                 }
